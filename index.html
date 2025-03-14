@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roulette Spinning Wheel</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+</head>
+
+  <body>
+  <div class="container">
+      <h1>Spin Whee</h1>
+      <div class="wheel-wrapper">
+      <canvas id="wheelCanvas" width="550" height="550"></canvas>
+      <div class="pointer"></div>
+      </div>
+      <button id="spinBtn" class="spin-btn" hx-post="/spin" hx-trigger="click" hx-target="#winnerText" hx-swap="innerHTML">Bop It!</button>
+      <div id="winnerText" class="winner" style="display: none;"></div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>

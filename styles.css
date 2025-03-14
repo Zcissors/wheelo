@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+canvas {
+    border-radius: 50%;
+    margin-bottom: 32px;
+    transition: transform 1s cubic-bezier(0.1, 0.7, 0.1, 1);
+}
+.wheel-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.pointer {
+    position: absolute;
+    left: 96%;
+    top: 46%;
+    transform: translateY(-50%) rotate(90deg);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 16px solid red;
+    margin-left: -4px;
+}
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spin-btn {
+    padding: 12px 24px;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #c155d6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.spin-btn:hover {
+    background-color: #db76f0;
+    transform: scale(1.05);
+}
+
+.spin-btn:active {
+    background-color: #d32f2f;
+    transform: scale(1);
+}
+
+.spin-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: scale(1);
+}
+.winner {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+}
+.winner.green {
+    background-color: #a5d6a7;
+    color: #2e7d32;
+}
+.winner.red {
+    background-color: #ef9a9a;
+    color: #c62828;
+}
+.winner.black {
+    background-color: #616161;
+    color: white;
+}
