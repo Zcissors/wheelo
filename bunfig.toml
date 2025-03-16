@@ -1,0 +1,6 @@
+[install]
+exact = true
+
+[dev]
+port = 3000
+open = true

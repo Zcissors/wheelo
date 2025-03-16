@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: theme('colors.casino-black');
+  color: white;
+}
+
+@layer components {
+  .neon-button {
+    @apply px-6 py-2 font-semibold rounded transition-all duration-300 relative overflow-hidden;
+  }
+  
+  .neon-button-pink {
+    @apply neon-button border border-neon-pink text-neon-pink hover:bg-neon-pink hover:text-black hover:shadow-neon-pink;
+  }
+  
+  .neon-button-blue {
+    @apply neon-button border border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-black hover:shadow-neon-blue;
+  }
+  
+  .neon-button-green {
+    @apply neon-button border border-neon-green text-neon-green hover:bg-neon-green hover:text-black hover:shadow-neon-green;
+  }
+  
+  .neon-text-pink {
+    @apply text-neon-pink drop-shadow-md;
+  }
+  
+  .neon-text-blue {
+    @apply text-neon-blue drop-shadow-md;
+  }
+  
+  .neon-text-green {
+    @apply text-neon-green drop-shadow-md;
+  }
+  
+  .neon-border {
+    @apply border-2 rounded-md;
+  }
+  
+  .neon-border-pink {
+    @apply neon-border border-neon-pink shadow-neon-pink;
+  }
+  
+  .neon-border-blue {
+    @apply neon-border border-neon-blue shadow-neon-blue;
+  }
+  
+  .neon-border-green {
+    @apply neon-border border-neon-green shadow-neon-green;
+  }
+  
+  .game-card {
+    @apply bg-casino-dark rounded-lg overflow-hidden transition-all duration-300 hover:scale-105;
+  }
+}

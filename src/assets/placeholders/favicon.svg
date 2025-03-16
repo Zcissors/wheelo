@@ -1,0 +1,11 @@
+// File: src/assets/placeholders/favicon.svg
+
+// This is a placeholder. You would replace this with your actual favicon SVG.
+// Example SVG placeholder:
+/*
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#000000"/>
+  <circle cx="16" cy="16" r="12" fill="#9D00FF"/>
+  <text x="16" y="20" font-family="Arial" font-size="14" fill="#FFFFFF" text-anchor="middle">C</text>
+</svg>
+*/

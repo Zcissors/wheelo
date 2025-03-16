@@ -1,0 +1,8 @@
+// This is a placeholder. You would replace this with your actual promotion banner SVG.
+// Example SVG placeholder:
+/*
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+  <rect width="600" height="300" fill="#0F0F1A"/>
+  <text x="300" y="150" font-family="Arial" font-size="36" fill="#FF00FF" text-anchor="middle">Promotion Banner</text>
+</svg>
+*/
